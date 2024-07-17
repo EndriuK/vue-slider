@@ -52,5 +52,8 @@ createApp({
     setCurrentSlide(index) {
       this.currentIndex = index;
     },
+    startAutoplay() {
+      this.autoplayInterval = setInterval(this.nextSlide, 3000);
+    },
   },
 }).mount("#app");
