@@ -36,4 +36,9 @@ createApp({
       autoplayInterval: null,
     };
   },
+  computed: {
+    currentSlide() {
+      return this.slides[this.currentIndex];
+    },
+  },
 }).mount("#app");
