@@ -59,4 +59,7 @@ createApp({
       clearInterval(this.autoplayInterval);
     },
   },
+  mounted() {
+    this.startAutoplay();
+  },
 }).mount("#app");
