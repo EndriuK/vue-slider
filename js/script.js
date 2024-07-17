@@ -41,5 +41,9 @@ createApp({
       return this.slides[this.currentIndex];
     },
   },
-  methods: {},
+  methods: {
+    nextSlide() {
+      this.currentIndex = (this.currentIndex + 1) % this.slides.length;
+    },
+  },
 }).mount("#app");
